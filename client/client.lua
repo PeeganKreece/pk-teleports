@@ -130,8 +130,8 @@ CreateThread(function()
     end
 end)
     
-    RegisterNetEvent('elevator:client:openmenu', function(updown, updown2)
-        if not menuOpen then
+RegisterNetEvent('elevator:client:openmenu', function(updown, updown2)
+    if not menuOpen then
         exports['qb-menu']:openMenu({
             {
                 header = "Elevator Actions",
@@ -148,8 +148,8 @@ end)
                 }
             },
         })
-        menuOpen = true
-        Wait(2500)
-        menuOpen = false
+    menuOpen = true
+    Wait(2500)
+    menuOpen = false
     end
-    end)
+end)
